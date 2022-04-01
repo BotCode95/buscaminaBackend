@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "a9108bdc-650b-43cf-a771-d0b1f78a5868",
+		"name": "GameBuscaminaV2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"game\" : {\r\n        \"id\": \"M67REZ8NPWJG94KVGOPP\",\r\n        \"created\": \"2022-05-22T17:18:26.259101-03:00\",\r\n        \"state\": {\r\n            \"code\" : \"1\",\r\n            \"description\" : \"CREATED\"\r\n        }\r\n    },\r\n    \"cells\" : []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/game/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"game",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Game Base",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/game",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Game Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/game/M67REZ8NPWJG94KVGOP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"game",
+						"M67REZ8NPWJG94KVGOP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Game",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/game/M67REZ8NPWJG94KVGOP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"game",
+						"M67REZ8NPWJG94KVGOP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Game",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"game\" : {\r\n        \"id\": \"M67REZ8NPWJG94KVGOP\",\r\n        \"created\": \"2022-05-22T17:18:26.259101-03:00\",\r\n        \"state\": {\r\n            \"code\" : \"1\",\r\n            \"description\" : \"CREATED\"\r\n        }\r\n    },\r\n    \"cells\" : []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/game/M67REZ8NPWJG94KVGOP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"game",
+						"M67REZ8NPWJG94KVGOP"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

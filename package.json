@@ -1,0 +1,31 @@
+{
+  "name": "buscaminabackend",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BotCode95/buscaminaBackend.git"
+  },
+  "author": "Patricio D. Bottino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BotCode95/buscaminaBackend/issues"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "uuid": "^8.3.2"
+  },
+  "homepage": "https://github.com/BotCode95/buscaminaBackend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
